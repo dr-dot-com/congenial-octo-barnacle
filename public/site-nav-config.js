@@ -1,9 +1,7 @@
 // Site navigation config for shell.js (shared across authy pages)
 window.SiteNavConfig = {
-  nav: [
-    { name: "Sign In", url: "/login", icon: "fa-solid fa-right-to-bracket" },
-    { name: "Admin Access", url: "/verify", icon: "fa-solid fa-shield" },
-  ],
+  mode: "navbar",
+  activePath: window.location.pathname,
   badge: { text: "AUTH", class: "badge-primary" },
   showSearch: false,
   showAppsGrid: true,
