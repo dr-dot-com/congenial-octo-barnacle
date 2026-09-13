@@ -83,7 +83,7 @@
 
     <main
       id="app"
-      class="eco-page eco-container eco-container-auth flex flex-col items-center justify-center min-h-[calc(100vh-6rem)]"
+      class="eco-page eco-container flex flex-col items-center justify-center min-h-[calc(100vh-6rem)]"
     >
       <!-- Loading state -->
       <div class="state flex flex-col items-center gap-4" id="stateLoading">
@@ -96,10 +96,7 @@
         class="state hidden flex flex-col items-center gap-4 w-full"
         id="stateLogin"
       >
-        <div
-          class="eco-card w-full md:max-w-md"
-        >
-          <div class="p-6 md:p-8">
+        <div class="eco-card w-full max-w-md">
             <!-- Header -->
             <div class="flex flex-col items-center mb-2 mt-2">
               <div class="inline-flex items-center justify-center gap-2 mb-2">
@@ -161,19 +158,16 @@
             <p class="text-xs text-base-content/60 text-center mt-6">
               Authentication includes 100 service credits per month
             </p>
-          </div>
         </div>
       </div>
 
       <!-- Authenticated state -->
       <div
-        class="state hidden flex flex-col items-center gap-4 w-full md:max-w-3xl"
+        class="state hidden flex flex-col items-center gap-4 w-full max-w-3xl"
         id="stateAuthenticated"
       >
-        <div
-          class="card bg-base-100 border border-base-content/10 rounded-2xl shadow-sm w-full"
-        >
-          <div class="card-body gap-6">
+        <div class="eco-card w-full">
+          <div class="flex flex-col gap-6">
             <!-- User info -->
             <div
               class="flex flex-col sm:flex-row items-start sm:items-center gap-4"
@@ -351,7 +345,7 @@
           </div>
         </div>
       </div>
-      <footer class="eco-footer w-full max-w-md mt-8">
+      <footer class="eco-footer w-full max-w-2xl mt-8">
         <span>&copy; <span id="year">2026</span> Dhanur Relhan</span>
         <div class="flex items-center gap-4">
           <a href="https://dhanur.me/" class="hover:text-base-content transition-colors">dhanur.me</a>
